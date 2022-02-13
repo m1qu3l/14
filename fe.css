@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.todoDetodo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.el{
+    z-index: 10000000000000000000;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em .3em;
+    font-size: 1.5em;
+    box-shadow: -15px -15px 15px 1px rgba(255, 255, 255, .2),
+    15px 15px 15px 1px rgba(0, 0, 0, .1),
+    inset -5px -5px 5px 1px rgba(255, 255, 255, .2),
+    inset 5px 5px 5px 1px rgba(0, 0, 0, .1);
+    text-align: center;
+    position: relative;
+}
+.he{
+    transition: .2s ease-in-out;
+}
+.el:hover{
+    transition: .2s ease-in-out;
+    transform: scale(1.1);
+}
+.n1_1,.n2_1,.n3_1,.n1,.n2,.n3,.n4,.n5,.n6,.n7, .n8, .n9, .n10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+
+.n6_2,.n6_3,.n6_4,.n6_5,.n6_6,.n6_7,.n6_8,.n6_9,.n6_10,.n7_2,.n7_3,.n7_4,.n7_5,.n7_6,.n7_7,.n7_8,.n7_9,.n7_10,.n5_2,.n5_3,.n5_4,.n5_5,.n5_6,.n5_7,.n5_8,.n5_9,.n5_10,.n4_2,.n4_3,.n4_4,.n4_5,.n4_6,.n4_7,.n4_8,.n4_9,.n4_10,.n3_2,.n3_3,.n3_4,.n3_5,.n3_6,.n3_7,.n3_8,.n3_9,.n3_10,.n2_2,.n2_3,.n2_4,.n2_5,.n2_6,.n2_7,.n2_8,.n2_9,.n2_10,.n1_2,.n1_3,.n1_4,.n1_5,.n1_6,.n1_7,.n1_8,.n1_9,.n1_10,.n2,.n3,.n4,.n5,.n6,.n7,.n8, .n9, .n10{
+    width: 80%;
+    height: 80%;
+}
+
+
+.n7_1,.n7_2,.n7_3,.n7_4,.n7_5,.n7_6,.n7_7,.n7_8,.n7_9,.n7_10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+
+.n6_1,.n6_2,.n6_3,.n6_4,.n6_5,.n6_6,.n6_7,.n6_8,.n6_9,.n6_10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+
+.n3_2,.n3_3,.n3_4,.n3_5,.n3_6,.n3_7,.n3_8,.n3_9,.n3_10{
+    border-radius: 10px;
+    position: absolute;
+    transition: .1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.n5_1,.n5_2,.n5_3,.n5_4,.n5_5,.n5_6,.n5_7,.n5_8,.n5_9,.n5_10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+.n4_1,.n4_2,.n4_3,.n4_4,.n4_5,.n4_6,.n4_7,.n4_8,.n4_9,.n4_10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+.n2_2,.n2_3,.n2_4,.n2_5,.n2_6,.n2_7,.n2_8,.n2_9,.n2_10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+.n1_2,.n1_3,.n1_4,.n1_5,.n1_6,.n1_7,.n1_8,.n1_9,.n1_10{border-radius: 10px;position: absolute;transition: .1s ease-in;display: flex;justify-content: center;align-items: center;}
+
+.n1{top: 0;left: 0;transform: translate(-50%, -50%);}
+.n1_1{top: 0;right: 0;transform: translate(50%, -50%);}
+.n2_1{bottom: 0;right: 0;transform: translate(50%, 50%);}
+.n3_1{bottom: 0;left: 0;transform: translate(-50%, 50%);}
+
+.n4_1{
+    top: 70%;
+    left: 0;
+    transform: translateX(50%);
+    transform: rotate(50deg);
+}
+.n5_1{
+    top: 50%;
+    bottom: 50%;
+    right: -25%;
+    transform: translateX(-50%);
+    transform: rotate(-50deg);
+}
+.n6_1{
+    top: -30%;
+    left: 0;
+    transform: translateX(50%);
+    transform: rotate(50deg);
+}
+.n7_1{
+    top: -30%;
+    right: -25%;
+    transform: translateX(-50%);
+    transform: rotate(-50deg);  
+}
+.n7_2, .n6_2,.n5_2, .n4_2{
+    animation: 2s rotar ease-in infinite;
+}
+
+.activo{
+    animation: aumentar 4s ease-in 1;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+}
+.n2, .n1_2, .n2_2, .n3_2{
+    animation: 2s palpi ease-in infinite;
+}
+
+@keyframes palpi {
+    0%{transform: scale(.9);}
+    25%{transform: scale(1);}
+    50%{transform: scale(1.1);}
+    75%{transform: scale(.9);}
+    100%{transform: scale(1);}
+}
+
+@keyframes rotar {
+    0%{transform: rotate(10deg);}
+    25%{transform: rotate(-10deg);}
+    50%{transform: rotate(50deg);}
+    75%{transform: rotate(-50deg);}
+    100%{transform: rotate(10deg);}
+}
+@keyframes aumentar{
+    0%{width: 1%;height: 1%;}
+    100%{width: 60%;height: 60%;}
+}
+@media screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .todoDetodo{
+        position: absolute;
+        width: 100vh;
+        height: 48vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(90deg);
+    }
+    .el{
+        font-size: 1.3em;
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .el{
+        font-size: 1.1em;
+    }
+    .n4_1{
+        transform: rotate(-50deg);
+    }
+    .n5_1{
+        transform: rotate(50deg);
+    }
+}
+.miquel{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 1.3em;
+}
